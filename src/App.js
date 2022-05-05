@@ -33,10 +33,10 @@ function App() {
       <a id={'capePdf'} href={Pdf2} target={'_blank'} rel="noreferrer">{'Go to Cape. PDF'}</a>
         <br/>
         {data && <div>
-            <h1>{'This is some fetched data:'}</h1>
-            <h2 id={'fetchedTitle'}>{data.title}</h2>
+            <h1 data_cy={'fetched-title'}>{'This is some fetched data:'}</h1>
+            <h2 data_cy={'fetched-sub-title'} id={'fetchedTitle'}>{data.title}</h2>
             <h3 id={'fetchedId'}>{'Article ID: '+data.id}</h3>
-            <p id={'fetchedData'}>{data.body}</p>
+            <p data_cy={'fetched-body'} id={'fetchedData'}>{data.body}</p>
         </div>}
     </div>
   );
